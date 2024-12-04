@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" type="image/png" href="pictogram.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Робота з анімаціями</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Робота з анімаціями</h1>
+    </div>
+
+    <img src="./Evro.svg" alt="img">
+    <img src="./beaker-svgrepo-com.svg" alt="img">
+    
+    <img src="./mem.jpg" alt="img_mem" width="250" height="250">
+
+    <div class="container">
+        <div class="coffee-header">
+          <div class="coffee-header__buttons coffee-header__button-one"></div>
+          <div class="coffee-header__buttons coffee-header__button-two"></div>
+          <div class="coffee-header__display"></div>
+          <div class="coffee-header__details"></div>
+        </div>
+        <div class="coffee-medium">
+          <div class="coffe-medium__exit"></div>
+          <div class="coffee-medium__arm"></div>
+          <div class="coffee-medium__liquid"></div>
+          <div class="coffee-medium__smoke coffee-medium__smoke-one"></div>
+          <div class="coffee-medium__smoke coffee-medium__smoke-two"></div>
+          <div class="coffee-medium__smoke coffee-medium__smoke-three"></div>
+          <div class="coffee-medium__smoke coffee-medium__smoke-for"></div>
+          <div class="coffee-medium__cup"></div>
+        </div>
+        <div class="coffee-footer"></div>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+        <circle cx="50" cy="50" r="20" fill="green">
+          <animate attributeName="r" values="20; 25; 20" dur="1s" repeatCount="indefinite" />
+          <animate attributeName="fill" values="green; darkgreen; green" dur="1s" repeatCount="indefinite" />
+        </circle>
+        <!-- Значок жвро в середині круга -->
+        <text x="50" y="50" text-anchor="middle" dy=".3em" font-size="15" fill="white">₴</text>
+      </svg>
+
+      <div class="animation-background"></div>
+      <canvas></canvas>
+      <script src="animations.js"></script>
+</body>
+</html>
